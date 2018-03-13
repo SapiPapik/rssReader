@@ -22,6 +22,7 @@ class RssResourceInteractor {
                     )
         }
 
-        fun addResource(rrsResource: RssResource): Completable = RssResourcesDbRepository.add(rrsResource.toRssResourceDb())
+        fun addResource(rrsResource: RssResource): Completable =
+                RssResourcesDbRepository.add(rrsResource.toRssResourceDb())
     }
 }
